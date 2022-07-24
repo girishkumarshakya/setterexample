@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean class="spring.core.setter.java.Movie" id="movie">
+        <property name="name" value="GANGS OF WASSEPUR"/>
+        <property name="director" value="ANURAG KYASYAP"/>
+        <property name="stuntMaster" value="Mr. NOBODY"/>
+        <property name="numberOfArtists" value="100"/>
+        <property name="releaseDate" value="12-Aug-2-12"/>
+    </bean>
+    <bean class="spring.core.setter.java.SimpleMovieLister" id="simpleMovieLister">
+        <property name="movie" ref="movie"/>
+    </bean>
+
+    <bean class="spring.core.setter.java.Movie" id="movie1"/>
+    <bean class="spring.core.setter.java.SimpleMovieLister" id="simpleMovieLister1"/>
+</beans>
